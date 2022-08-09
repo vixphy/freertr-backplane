@@ -6,3 +6,14 @@ vrf def v1
  rd 1:1
  exit
 !
+!
+server telnet tel
+ security protocol telnet
+ exec timeout 10000000
+ exec colorize rainbow
+ exec logging
+ no exec authorization
+ no login authentication
+ vrf v1
+ exit
+!
