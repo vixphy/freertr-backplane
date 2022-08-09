@@ -1,7 +1,38 @@
 hostname r8
+buggy
 !
 !
-vrf def v1
+vrf definition v1
  rd 1:1
  exit
 !
+interface ethernet1
+ no description
+ no shutdown
+ no log-link-change
+ exit
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+server telnet tel
+ security protocol telnet
+ exec timeout 10000000
+ exec logging
+ no exec authorization
+ no login authentication
+ vrf v1
+ exit
+!
+!
+end
