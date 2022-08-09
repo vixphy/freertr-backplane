@@ -4,3 +4,52 @@ vrf def v1
  rd 1:1
  exit
 !
+vrf def v9
+ rd 1:1
+ exit
+!
+int lo0
+ vrf for v1
+ ipv4 addr 2.2.2.101 255.255.255.255
+ ipv6 addr 4321::101 ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
+ exit
+!
+int lo9
+ vrf for v9
+ ipv4 addr 10.10.10.227 255.255.255.255
+ exit
+!
+int eth1
+ vrf for v9
+ ipv4 addr 10.11.12.254 255.255.255.0
+ exit
+!
+int eth2
+ exit
+!
+int eth3
+ vrf for v9
+ ipv4 addr 10.12.13.254 255.255.255.0
+ exit
+!
+int eth4
+ exit
+!
+int eth5
+ vrf for v9
+ ipv4 addr 10.13.14.254 255.255.255.0
+ exit
+int eth6
+ exit
+!
+server telnet tel
+ security protocol telnet
+ exec timeout 10000000
+ exec colorize rainbow
+ exec logging
+ no exec authorization
+ no login authentication
+ vrf v1
+ exit
+!
+end
