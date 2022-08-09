@@ -1,1 +1,7 @@
 hostname r6
+!
+!
+vrf def v1
+ rd 1:1
+ exit
+!
