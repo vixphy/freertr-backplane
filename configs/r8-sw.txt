@@ -7,7 +7,6 @@ vrf definition v1
  exit
 !
 interface ethernet1
- no description
  no shutdown
  no log-link-change
  exit
@@ -28,6 +27,7 @@ interface ethernet1
 server telnet tel
  security protocol telnet
  exec timeout 10000000
+ exec colorize rainbow
  exec logging
  no exec authorization
  no login authentication
