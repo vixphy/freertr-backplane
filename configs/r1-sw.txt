@@ -39,12 +39,12 @@ int eth5
  vrf for v9
  ipv4 addr 10.13.14.254 255.255.255.0
  exit
+!
 int eth6
  exit
 !
 server telnet tel
  security protocol telnet
- exec timeout 10000000
  exec colorize rainbow
  exec logging
  no exec authorization
@@ -52,4 +52,3 @@ server telnet tel
  vrf v1
  exit
 !
-end
