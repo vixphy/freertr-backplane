@@ -1,54 +1,100 @@
 hostname r1
+buggy
 !
-vrf def v1
+!
+vrf definition v1
  rd 1:1
  exit
 !
-vrf def v9
+vrf definition v9
  rd 1:1
  exit
 !
-int lo0
- vrf for v1
- ipv4 addr 2.2.2.101 255.255.255.255
- ipv6 addr 4321::101 ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
+interface loopback0
+ vrf forwarding v1
+ ipv4 address 2.2.2.101 255.255.255.255
+ ipv6 address 4321::101 ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
+ no shutdown
+ no log-link-change
  exit
 !
-int lo9
- vrf for v9
- ipv4 addr 10.10.10.227 255.255.255.255
+interface loopback9
+ vrf forwarding v9
+ ipv4 address 10.10.10.227 255.255.255.255
+ no shutdown
+ no log-link-change
  exit
 !
-int eth1
- vrf for v9
- ipv4 addr 10.11.12.254 255.255.255.0
+interface ethernet1
+ vrf forwarding v9
+ ipv4 address 10.11.12.254 255.255.255.0
+ no shutdown
+ no log-link-change
  exit
 !
-int eth2
+interface ethernet2
+ no shutdown
+ no log-link-change
  exit
 !
-int eth3
- vrf for v9
- ipv4 addr 10.12.13.254 255.255.255.0
+interface ethernet3
+ vrf forwarding v9
+ ipv4 address 10.12.13.254 255.255.255.0
+ no shutdown
+ no log-link-change
  exit
 !
-int eth4
+interface ethernet4
+ no shutdown
+ no log-link-change
  exit
 !
-int eth5
- vrf for v9
- ipv4 addr 10.13.14.254 255.255.255.0
+interface ethernet5
+ vrf forwarding v9
+ ipv4 address 10.13.14.254 255.255.255.0
+ no shutdown
+ no log-link-change
  exit
 !
-int eth6
+interface ethernet6
+ no shutdown
+ no log-link-change
  exit
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
 !
 server telnet tel
  security protocol telnet
- exec colorize rainbow
+ exec colorize prompt
  exec logging
  no exec authorization
  no login authentication
  vrf v1
  exit
 !
+!
+end
