@@ -61,31 +61,37 @@ interface ethernet6
  no log-link-change
  exit
 !
+bundle 1
+ exit
 !
+bundle 2
+ exit
 !
+bundle 3
+ exit
 !
+bundle 4
+ exit
 !
+int bun1
+ vrf for v1
+ mpls ena
+ exit
 !
+int bun2
+ vrf for v1
+ mpls ena
+ exit
 !
+int bun3
+ vrf for v1
+ mpls ena
+ exit
 !
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
+int bun4
+ vrf for v1
+ mpls ena
+ exit
 !
 server telnet tel
  security protocol telnet
