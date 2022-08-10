@@ -153,6 +153,28 @@ int sdn34
  bundle-gr 4
  exit
 !
+server dhcp4 eth1
+ pool 10.11.12.1 10.11.12.99
+ gateway 10.11.12.254
+ netmask 255.255.255.0
+ dns-server 10.10.10.227
+ domain-name p4l
+ static 0000.0000.2222 10.11.12.111
+ interface eth1
+ vrf v9
+ exit
+!
+server dhcp4 eth3
+ pool 10.12.13.1 10.12.13.99
+ gateway 10.12.13.254
+ netmask 255.255.255.0
+ dns-server 10.10.10.227
+ domain-name p4l
+ static 0000.0000.3333 10.12.13.111
+ interface eth3
+ vrf v9
+ exit
+!
 server telnet tel
  security protocol telnet
  exec colorize prompt
