@@ -4,6 +4,10 @@ vrf def v1
  rd 1:1
  exit
 !
+vrf def v9
+ rd 1:1
+ exit
+!
 server telnet tel
  security protocol telnet
  exec timeout 10000000
