@@ -1,3 +1,7 @@
 # ignore large files
 *.jar
 *.log
+.vagrant/
+virtualized/*/*
+!virtualized/*/rtr-hw.txt
+!virtualized/*/rtr-sw.txt

@@ -1,0 +1,11 @@
+hwid r1
+proc ifc1.sh /rtr/rawInt.bin eth0 20002 127.0.0.1 20001 127.0.0.1
+int eth1 stat eth 08:00:27:8d:c0:4d 127.0.0.1 20001 127.0.0.1 20002
+proc ifc2.sh /rtr/rawInt.bin eth1 20012 127.0.0.1 20011 127.0.0.1
+int eth2 stat eth 08:00:27:20:d3:10 127.0.0.1 20011 127.0.0.1 20012
+proc ifc3.sh /rtr/rawInt.bin eth2 20022 127.0.0.1 20021 127.0.0.1
+int eth3 stat eth 08:00:27:6d:82:c5 127.0.0.1 20021 127.0.0.1 20022
+proc ifc4.sh /rtr/rawInt.bin eth3 20032 127.0.0.1 20031 127.0.0.1
+int eth4 stat eth 08:00:27:b1:0f:45 127.0.0.1 20031 127.0.0.1 20032
+proc tap20001.sh /rtr/tapInt.bin tap20001 20042 127.0.0.1 20041 127.0.0.1 10.255.255.1/24 10.255.255.254
+int eth20001 eth - 127.0.0.1 20041 127.0.0.1 20042

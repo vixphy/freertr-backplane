@@ -1,0 +1,296 @@
+hostname freertr
+buggy
+!
+logging buffered debug 8192
+logging file debug zzz.log
+logging rotate 65536000 zzz.old
+!
+crypto rsakey rsa import $v10$TUlJRW9RSUJBQUtDQVFCenV3UENmaGxSelBiaHEvTXlHMUZiR0l6MGZQNGJVcW5JMTFZdFVPWmM0NDBuY3NCTCtmQi9BdjNZa25RdG80TzB1bzB4WXpPZ3hpNFZiQVNIL1JTRld3TjdEU2x5Y0RwUFRhdFZOS3FEd1NvQXpMQ3JRU1A1WUR1QnlON0srcUNPNG1qT09RTysrOWlVK25TMCtuOEphWlVTcW95Lzl3NU9CVGJsZHFKbmVFOTlTZ01GcmlBMDN2T004WGEvdjBLU0dmV0h5d0gzd21QZE1kTXowL3Z3UkRzVWcvSWJuRnc0ZTlNL3dwS2p2L1ZvcDhhYTRXU2tqS3NvUEp6aUNMSEtCSWN3SzZPME1ham5WaTFkT2hxWGk0WGdOQndkaFFBNjhoNVNCYlc2b2x0Q2MxelA5UFBKRlJYY3pLbFE4VmlxVzZLV1IxV2YxTDdiQlpiWU0wZVZBZ01CQUFFQ2dnRUFaQ1g5TGV6RGFtZE5hYUxNVkpzUlB4eXl0Y3dJZFlxR1JMZ2I2aUV0Q0VzZVZublY4S2w4dGR6WDRQZHp0QjdoRlordUdZUDRKSFA3WXl4VGkzNjFxR1ZIVU0vbUF4TWRVbzBxN0JRa1R0bjB5RFpaMkFrSjRYNm1ZRHg4bC9oa3d1RW93dlRSeWc3VXNLOUFHWEVBU0J2bkZmMGl5ZWc0cDhtWlpON1IwV2s0b0xMZHNKTHNjajY0cWovUGVqU1puKzR2SzUveDNOSU40U0IwSUxTbElBRFcyZXFlbjFYYjcvTXZ1blFieEhHbmVhRW9Uc3phREs0NEY5bVV4Mmp5SmdmYjVWbnl0eGVxek5mek5GcnhORWNncWtFNktVVGVGWDNFYlJEalBHelRwc3pOM3NVdktnS1JueTZKQ3VLTE9LcXhjVVo2QWNab0VHbXRKNVFpQVFLQmdRRFpHay92dCtoL2FzMXNlenVrMUFtOURMUEU0NG02OHF2ZlFwQW01N21DejVydm9PRHVvK3hiODlUZ2NQdWZLUEdQSkI3aHVXRXFtSHpPYm5tVnQ3WmhMNHB4OW1wOFo1dkJWQUJGajNYMnRvSzY0T1d2N2pydUZvVmRndzRIUWNlemZHaVpMREE1Z2t3aUs1Zm1ZMkg0bW5HMGZuNm81UlpxSmI3OVBLT2JGUUtCZ1FDSWR5TnkxYzVxcW81SHZRN1FXclQzbFBTRHZFSjYvcC9WZWFvajI1TjJKQlFheUloN2l5R205d1ZEdDY0UzNOMlRaWitxMFdxOGllYWNOUlIvWHp4QjFGQnRyMFdFRlZab1FkQ01xVDQ3S21GUDJJY0ZibW1SVWtZVDlNK2tNVURqR1FMU05uTUF0UFo3T1pGSFNlOSt0TnFvcWZTR3l3VFpRSkdRdEhvYWdRS0JnRDdkV0tKQWJhbGZvc1l6MU95QW5hVkpaVkN3MW5QMHl3SG1BMW5RcGE0VU1YZ0w3TFlOYjJhYzcxcGlQT28wYitZVC9vRThMYitvMGhMd2VISjY5T3VsV1lCd2F4dEU0UndWRjlNTW5JcnBCR2Zhc1lmRkF2bG9PZ3YrNC9RRC96Q2c2S1RaMzhqM1N0Wm1LeUVDVEI4eGtaVkRQNmZtVmh3OGU5WldWY1dWQW9HQVNab1FXWGh0cTJRdjl3dEYrU1JqSklHSFc2SG5MVlUxdWJxMEJFRUNpSjZ1NVQ4eE5ZajE3b3Flb1VacE1hMUVLS0tQK2w2V3RmZWVsTE9nU1k2QS9uUlhxTUQydW1XVHhBbHpSTnBuUVJ2N2ZrZ25rc3RaVHRMVUR5RmorSWZFR25nNzZFc0x2ZDdjYmR1L3VuWnJJS2pFb21HQURFOWxYeE9QTHovWDk0RUNnWUE1c0FtV2xYM2VLczc1amw1NlhmZ1kvRWZpUEY1UzMwN0RobXU5U0VER2FGTjdyN2Y5MzFjSTlFenlPSnBmY0ZLUmk1K1VUU01Sb2c0UWhGTVEzWCtmUEk1UzY5M0Vxc3d6dmVRQmdVVE5HbmNPa3g5YnBzdUdmV3JjRE1Rc21sbENXWTB6bSthc3VweUxoaUMvMlhXc1NUbjBwZGhHTEhFdDFac2ZwcXZhaWc9PQ==
+!
+crypto dsakey dsa import $v10$TUlJQnVRSUJBQUtCZ0VjcnA3Tm5jeVM4OHJPTm83a2NKWERuVHVnQlpxdjA0SXBMUkRzazRVdnhsZGZCaStUcng1Z0VDdWFvMC9PL1dTQkEwOE81NmI1TEI1MzhIdXFHeHNMd1VqWnQ2cEdRY0JTL1E5enJJeURLNXc1TUxxV1NHVlhKMDB4d1lXQU1takV4Tkx0SGRldlZoWlExR2lwT0RXS0NHbEUrd25sQVVBUWRnTlZNYkdSZEFoVUFub3ZUWmU5N3N5MksxMXlIVVl1bWM0Z095M3NDZ1lBZ1hSUmtpTnREQkhNRzF4RFBYaGRDaTR0OTYrdE5FZXR5WG5jaXE2SUt2Zjlwb3BGTk5aWExkQXdDZm1pbmFpLytnaWNGMmJDOHIybXE5RFNiY25Ya01jMmk5TEcrTVBlY3JuZG1nSlVDcUt3YkxOQmxKSHMwdFZDT1ZYZkxlOWkweWZ5WVlzbWhOOHVDamhyajVIYkhTMmtDZlB5S1RkV0IvSEI0RzlWY3V3S0JnQXBLc0piR0FRWXI2d3U5eWZzdWxtVzE0VktHSlFUVmpuVFliS0d1Nk50eDJvWTh0RC9QNjBWQ2dHU2twOHpVSlI2Q05sNTJXQjZ3Ly9lN2laaThiMkNhNDhVbEhBOFB4UDVoTHV6R2pYd2k1eXVPbDJlV2luSFZaQnpWb0RrZkpkK3FHQnVzdUVZUDRvNUZod2FSTGE4M2RLTVllODVZNitDbXhBcWU2aEpmQWhRaXJTSmt6SUQxU2RZdjdlc1d5eGZUSUYycHJRPT0=
+!
+crypto ecdsakey ecdsa import $v10$TUhRQ0FRRUVJQUNaVEFWTlJWTG1MZ0JQMCtnbjVXZXpva2pTM3p6ZnpYbjIvOGZZa1pqd29BY0dCU3VCQkFBS29VUURRZ0FFYjFiYWhWVlJDVGFSSElRZG9PZVFhcUpyR04veDhVMUtCTkpsTFlML2FwNlk0QmZmK011Vk5rTnBJRUszVEI2djJnMnBSMFo2Q2pjU21yN2RMQTRHRGc9PQ==
+!
+aaa userlist users
+ username *
+ username * anypass
+ exit
+!
+scheduler errors
+ time 600000
+ delay 30000
+ command clear errors freerror@nop.hu
+ start
+ exit
+!
+scheduler upgrade
+ time 600000
+ delay 60000
+ random-time 60000
+ random-delay 300000
+ command flash upgrade
+ start
+ exit
+!
+object-group network host4
+ sequence 10 10.255.255.0 255.255.255.0
+ exit
+!
+object-group network host6
+ sequence 10 2001:db8:ffff:ffff:: ffff:ffff:ffff:ffff::
+ exit
+!
+object-group network lloc4
+ sequence 10 169.254.0.0 255.255.0.0
+ exit
+!
+object-group network lloc6
+ sequence 10 fe80:: ffff::
+ exit
+!
+object-group network mcast4
+ sequence 10 224.0.0.0 255.255.0.0
+ exit
+!
+object-group network mcast6
+ sequence 10 ff00:: ff00::
+ exit
+!
+access-list nat4
+ sequence 10 deny all obj lloc4 all any all
+ sequence 20 deny all any all obj mcast4 all
+ sequence 30 deny all obj host4 all obj host4 all
+ sequence 40 permit all obj host4 all any all
+ exit
+!
+access-list nat6
+ sequence 10 deny all obj lloc6 all any all
+ sequence 20 deny all any all obj mcast6 all
+ sequence 30 deny all obj host6 all obj host6 all
+ sequence 40 permit all obj host6 all any all
+ exit
+!
+prefix-list all4
+ sequence 10 permit 0.0.0.0/0 ge 0 le 0
+ exit
+!
+prefix-list all6
+ sequence 10 permit ::/0 ge 0 le 0
+ exit
+!
+bundle 1
+ exit
+!
+vrf definition inet
+ exit
+!
+vrf definition v9
+ rd 1:1
+ exit
+!
+interface loopback0
+ vrf forwarding inet
+ ipv4 address 2.2.2.101 255.255.255.255
+ ipv6 address 4321::101 ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
+ no shutdown
+ no log-link-change
+ exit
+!
+interface bundle1
+ vrf forwarding inet
+ mpls enable
+ no shutdown
+ no log-link-change
+ exit
+!
+interface ethernet1
+ description uplink
+ vrf forwarding inet
+ ipv4 address dynamic dynamic
+ ipv4 gateway-prefix all4
+ ipv4 dhcp-client enable
+ ipv4 dhcp-client early
+ ipv6 address dynamic dynamic
+ ipv6 gateway-prefix all6
+ ipv6 slaac-client enable
+ ipv6 prefix-suppress
+ no shutdown
+ no log-link-change
+ exit
+!
+interface ethernet2
+ vrf forwarding v9
+ ipv4 address 10.11.12.254 255.255.255.0
+ no shutdown
+ no log-link-change
+ exit
+!
+interface ethernet20001
+ description linux
+ vrf forwarding inet
+ ipv4 address 10.255.255.254 255.255.255.0
+ ipv6 address 2001:db8:ffff:ffff::1 ffff:ffff:ffff:ffff::
+ no shutdown
+ no log-link-change
+ exit
+!
+interface ethernet3
+ no shutdown
+ no log-link-change
+ exit
+!
+interface ethernet4
+ vrf forwarding inet
+ ipv4 address 10.10.10.1 255.255.255.0
+ no shutdown
+ no log-link-change
+ exit
+!
+interface sdn11
+ mtu 1500
+ macaddr 006e.5708.1650
+ vrf forwarding inet
+ ipv4 address 1.1.1.1 255.255.255.0
+ ipv6 address 1234:1::1 ffff:ffff::
+ ipv6 enable
+ no shutdown
+ no log-link-change
+ exit
+!
+interface sdn12
+ mtu 1500
+ macaddr 0056.3117.6d4e
+ vrf forwarding inet
+ ipv4 address 1.1.2.1 255.255.255.0
+ ipv6 address 1234:2::1 ffff:ffff::
+ ipv6 enable
+ no shutdown
+ no log-link-change
+ exit
+!
+interface sdn13
+ mtu 1500
+ macaddr 003b.4417.456a
+ bundle-group 1
+ no shutdown
+ no log-link-change
+ exit
+!
+interface sdn14
+ mtu 1500
+ macaddr 007d.0533.701f
+ bundle-group 1
+ no shutdown
+ no log-link-change
+ exit
+!
+proxy-profile inet
+ vrf inet
+ exit
+!
+!
+!
+!
+!
+!
+ipv4 nat inet sequence 10 srclist nat4 interface ethernet1
+!
+ipv6 nat inet sequence 10 srclist nat6 interface ethernet1
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+alias test bash command attach shell1 /rtr/ptyRun.bin /bin/bash
+alias test bash description get linux shell
+!
+server telnet tel
+ security authentication users
+ security rsakey rsa
+ security dsakey dsa
+ security ecdsakey ecdsa
+ access-log
+ access-rate 5 5000
+ access-total 5
+ access-peer 5
+ second-port 22
+ exec logging
+ no exec authorization
+ login authentication users
+ login logging
+ login last global
+ interface ethernet20001
+ vrf inet
+ exit
+!
+server p4lang p4
+ dataplanes 2
+ forwarder 0 export-vrf inet
+ forwarder 0 export-port sdn11 1 10 0 0 0
+ forwarder 0 export-port sdn12 2 10 0 0 0
+ forwarder 0 export-port sdn13 3 10 0 0 0
+ forwarder 0 export-port sdn14 4 10 0 0 0
+ forwarder 0 export-port bundle1 dynamic 0 0 0 0
+ forwarder 0 interconnect ethernet3
+ forwarder 0 backplane bundle1 1
+ forwarder 0 remote 10.11.12.111
+ forwarder 1 remote ::
+ vrf v9
+ exit
+!
+server forwarder ssh2host
+ access-log
+ access-rate 5 5000
+ access-total 5
+ access-peer 5
+ port 22
+ logging
+ target vrf inet
+ target interface ethernet20001
+ target address 10.255.255.1
+ target port 22
+ interface ethernet1
+ vrf inet
+ exit
+!
+server dhcp4 eth1
+ pool 10.11.12.1 10.11.12.99
+ gateway 10.11.12.254
+ netmask 255.255.255.0
+ dns-server 10.10.10.227
+ domain-name p4l
+ static 0800.2752.0fa0 10.11.12.111
+ interface ethernet2
+ vrf v9
+ exit
+!
+server dns ns
+ recursion enable
+ interface ethernet20001
+ vrf inet
+ exit
+!
+client proxy inet
+client name-server 8.8.8.8
+client upgrade-server http://upgrade.nop.hu/
+client upgrade-backup
+client config-backup
+client time-server europe.pool.ntp.org
+client time-zone CET
+!
+end

@@ -1,0 +1,6 @@
+hwid r2
+tcp2vrf 2323 p4 23 127.0.0.1
+tcp2vrf 9080 p4 9080 127.0.0.1
+proc p4emu /rtr/p4emu.bin 127.0.0.1 9080 5 eth0 eth1 eth2 eth3 veth1b veth0b
+int eth0 eth - 127.0.0.1 19999 127.0.0.1 19998
+proc cpuport /rtr/pcapInt.bin veth0a 19998 127.0.0.1 19999 127.0.0.1

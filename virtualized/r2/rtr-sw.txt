@@ -1,0 +1,255 @@
+hostname freertr
+buggy
+!
+logging buffered debug 8192
+logging file debug zzz.log
+logging rotate 65536000 zzz.old
+!
+crypto rsakey rsa import $v10$TUlJRW9RSUJBQUtDQVFCSTFZVkdEVUVQcEpmT2luMUE5QlZPMXdjbFlSMUJvY1BTSWNzdm5oU3lmbHB3ZWJFQU0vdlc0OU11TmRpc0Z0UGJPYmI3OHIxNmN2eENqSnlMUVhmUFp1NTJhRlV0QUJYdy9lNUtEdEF1K0krMjZTTkcvWFRqeHRKR28xZVdlNGY5ZTNKVzJhM21Od1l4QmF6cTNkMnFBZEtrdUVJRy90TC9kTWswZjg1OWlIUXFlbDRrMnAyZ2lxQXdPdDJnenVyd2lqUUJ1UlJtSFlFaU5vb3drdnFKSHkzSXRuV2tpU1RrNWlvOG1RODBnMGQzVzZpbnJHQzR1Tjh6aGgzdlZNQjNoWUcxaUxwbHlmb3JRVGx6Mlc1OFgwcHFZVDRwamJGNUl4Y21uclY0Ti9LeklTSS9kOThIWjhCL1JGVUVPb3c1OWFPRHgzUTFvZ1FEdnhTRGRwaUpBZ01CQUFFQ2dnRUFHVmoyQU9NcitWMjIxMUtyTktlOW9xcUMraWRLSDBWRStTUjVxaURCNHp6R0RNN05JdHowa0Z6SmFoT2pUSURGU2s1VHVHdEtOZ3MrYjRxd0VHYkFZNVhXOTY1bnRqbUphVTEyV0orL0pCbXRLbU1JdS9RSmNod0hvajNHaGNDSUcxZVMrMWJXaG9BdnoyL0NOaHJ3d2ZIUWRUTUxCNVEzcWwvaWhqclVpaXRMNmVFZG1aUUs5QmYySEo0R3A1SStrMkNLdytFTE5lVzZBeW1EMnJ4dXM1SFliYUNkTWdGMWcrWFROWmFrbEo4Q2c5Tm5CWlV5Y05WSzRQUFhrZnZHTTNRRnkzMUZmNUxpeU0ycDJlL2pEYlZsY2EvZWdwRnpWdFlHRWRNV21adFIzR2lVN3grenNzVU1uU0NUY1VjdDBwMjdZUkFZdHVwU3pPVHIza1NEZ1FLQmdRQ05JRXlVY2xRZFZmN2IyQXZwaGFaVWlLWStmNzgxT3FxZHR0a1FaMEo1NzlobzJtUlVFN2VHTjdjNlJDNi8ydDN1bnBVb1J0VUJDeUxWVlZvUGZjL2sxcGtwTDZNUHAxVlVNRjI0bWtJZzlkT1dwc0RGUUtYeUtCTTg4b3IwYllUSElFL3Q2eUNGNW1ITTN3K0RBY2IwMktOOVlnWFg3dWx1cGFXRStsUm1aUUtCZ1FDRUhwaGd5ZkZrMENBVWtXekl3MVN5VzdCQ1VpblUydnZTNHpNRHdDY0Fkc291Y1pZcG5oK1F5Y296R09aS01nSEErWksvcTl4bTRqVXpNVDY2UGZDeWd4WkQ0RWpKbEJHcmdYdkROaVh0a0ZQK3dHeW8xUGk5NEhJMTRrTS85TnZPdXdSZkV3SjJTTFFSTzZ0dU9vcnlsdm9zbkVqb25JZHlpV0lhMjlRbFZRS0JnRm14VVhwM1B5WjE1VWhzQXdZanZ4YXkwcFdlTXpQdFdVcHJUNEd4WHZxSWlRMzYzeERnaHg5eWdhMHljRlBYRW4zNW8rcTVPZDh6Nkt1VlYydkpGanZtZCtsSk1XVmRnRW5GZzRzejN4dDdvVUo2TU1JczJFc1RWVWJERDdWUmRiWG92MlFDcitUcUN2WmVQa21RODVYaHFlYWlTZngzQnowZlloY2wwa1pSQW9HQU1GcEdLRDRnRTJZOEoycmxwa0Fla2p3T01PZURHYnlmSnhveGhIRGhsVURrVThVTVVPVG01b1dEYzluc0JrRnc5T0FoL2ZYMjdzeGc3Z0JhMWF4dmw5Vno0NW1FNmdrL3drWGNOcUJ0bHhrWU5JYlYvYUFiL05uVTByV2hLUm9EREJEVDA3dlFUZHZqMHQ3RXFjM1JKbUZzNDhDNnlpN25QMXJhUmJ3b1V4VUNnWUJ4OGdQME5xbDh0VFQ3T3pJb1ArVTVzTmFIN0JRU3JGbWFjV2hqOVV0RlFXQitiVElTYUFRajVYVkIyak5KL3h4bTkzYUIycTJldVhVMmRHL014R1JGZmtSQkJFcjBjYWlLRUtGQnFOSFY3RGtZUjZsS21hTCtSYjFjRWo3NElwNGVGRE9OdUwyWW41ZGl5MThUSGNrY0VHY3BUYktDMHhlOTQyVnZLUXZKMEE9PQ==
+!
+crypto dsakey dsa import $v10$TUlJQnV3SUJBQUtCZ1FDQTEyVE1OZ1lTTlFpbElDVUI4djNBTFZIbzBta29VcW5PdUtScWlEblo4U2lPeDFhd2hwM0NhaWt4L2ZEamxpbU1BUGdRMFNjN1c2UStQWncvaVFlVk1tSU1rRkExUTVBNGw0UkRaeFplcTFCb0xzK25VMHNLcE5KeGg1UEtNRXdMRVFxQXR4Sm16WUhlOEhYS2pwYUo4R0tGUi9WRHROaUlGNmRCVXIyNVR3SVZBTFlhd2dVdFhqTmdoTEFaeGpjZ2VFZU92c3o1QW9HQVdjRVFmbDMvRWFsb053L2xJWWowQmlsODJ4dmg2WGNMeVR4cU5JVUtPWnVscEtYL2x2MlNoUDBoQTl6U3dIM0dNMjVmdWUrWlJqbkpWeTcvNG9jSnViT1lRcDFmWFJjbFNJMFNwR0tBeDZhaTlKbzhFWWI3OGFqZytNMUplUy9yL3haMDF3dEo3eWFVS2ZEekVQeXlmd05XT0kyTVQvUzNJclZ4MWdnREt0VUNnWUIvd2VoVEJlaHp0ZkZiemwycFE4NzR3Q2Jud0dFU3g0WW1adDVTcWJCS2djSGNab09rSDJ3NFVXMjBTSXhZOTZNN3pjNzNZU1RBMUI3Q3JEWlAxZCsyR0QycXR4b1JDRkhpS0pLUzZzcmxHQmlveEJQYkVMd3lFWVg4UmNPdWpYai81TGY2MEJwREkvN3M0b21MWVBQa3gwTWNnaERDb0FlNGNuc2drVVRmOWdJVkFLVmxxZDk0Z2JQbUN5eVVvMUN3ZzFOa05VczA=
+!
+crypto ecdsakey ecdsa import $v10$TUhNQ0FRRUVIMlg3Z2xEOVM5QWpTOU9oMnZxV0xCb3dpSGZJR3VkaFhYUUxteW8yMi95Z0J3WUZLNEVFQUFxaFJBTkNBQVJ0WVhjU1c5RmVjOXZDeFJBMHNEdWVmd2lYQW9sZFZid2NSMGtHcDZDQ2VJelhkUC9ETWk2elNCSENRZWxESFdsWkFVd0hiQ2NBVUFmcE5Rc1UvVmxw
+!
+aaa userlist users
+ username *
+ username * anypass
+ exit
+!
+scheduler errors
+ time 600000
+ delay 30000
+ command clear errors freerror@nop.hu
+ start
+ exit
+!
+scheduler upgrade
+ time 600000
+ delay 60000
+ random-time 60000
+ random-delay 300000
+ command flash upgrade
+ start
+ exit
+!
+object-group network host4
+ sequence 10 10.255.255.0 255.255.255.0
+ exit
+!
+object-group network host6
+ sequence 10 2001:db8:ffff:ffff:: ffff:ffff:ffff:ffff::
+ exit
+!
+object-group network lloc4
+ sequence 10 169.254.0.0 255.255.0.0
+ exit
+!
+object-group network lloc6
+ sequence 10 fe80:: ffff::
+ exit
+!
+object-group network mcast4
+ sequence 10 224.0.0.0 255.255.0.0
+ exit
+!                  
+object-group network mcast6
+ sequence 10 ff00:: ff00::
+ exit
+!
+access-list nat4
+ sequence 10 deny all obj lloc4 all any all
+ sequence 20 deny all any all obj mcast4 all
+ sequence 30 deny all obj host4 all obj host4 all
+ sequence 40 permit all obj host4 all any all
+ exit
+!
+access-list nat6
+ sequence 10 deny all obj lloc6 all any all
+ sequence 20 deny all any all obj mcast6 all
+ sequence 30 deny all obj host6 all obj host6 all
+ sequence 40 permit all obj host6 all any all
+ exit
+!
+prefix-list all4
+ sequence 10 permit 0.0.0.0/0 ge 0 le 0
+ exit
+!
+prefix-list all6
+ sequence 10 permit ::/0 ge 0 le 0
+ exit
+!
+bundle 1
+ exit
+!
+vrf definition inet
+ exit
+!
+vrf definition p4
+ exit
+!
+interface bundle1
+ vrf forwarding inet
+ mpls enable
+ no shutdown
+ no log-link-change
+ exit
+!
+interface ethernet0
+ description p4 cpu port
+ no shutdown
+ no log-link-change
+ exit
+!
+interface sdn1
+ description uplink
+ mtu 1500
+ macaddr 0800.278d.c04d
+ vrf forwarding inet
+ ipv4 address dynamic dynamic
+ ipv4 gateway-prefix all4
+ ipv4 dhcp-client enable
+ ipv4 dhcp-client early
+ ipv6 address dynamic dynamic
+ ipv6 gateway-prefix all6
+ ipv6 slaac-client enable
+ ipv6 prefix-suppress
+ no shutdown
+ no log-link-change
+ exit
+!
+interface sdn2
+ mtu 1500
+ macaddr 0800.2752.0fa0
+ vrf forwarding inet
+ ipv4 address 10.11.12.111 255.255.255.0
+ no shutdown
+ no log-link-change
+ exit
+!
+interface sdn3
+ mtu 1500
+ macaddr 0800.2761.6638
+ no shutdown
+ no log-link-change
+ exit
+!
+interface sdn4
+ mtu 1500
+ macaddr 0800.2742.b8a8
+ no shutdown
+ no log-link-change
+ exit
+!
+interface sdn5
+ description linux
+ mtu 1500
+ macaddr 0072.7634.3119
+ vrf forwarding inet
+ ipv4 address 10.255.255.254 255.255.255.0
+ ipv6 address 2001:db8:ffff:ffff::1 ffff:ffff:ffff:ffff::
+ no shutdown
+ no log-link-change
+ exit
+!
+proxy-profile inet
+ vrf inet
+ exit
+!
+!
+!
+!                  
+!
+!
+ipv4 nat inet sequence 10 srclist nat4 interface sdn1
+!
+ipv6 nat inet sequence 10 srclist nat6 interface sdn1
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+alias test bash command attach shell1 /rtr/ptyRun.bin /bin/bash
+alias test bash description get linux shell
+!
+server telnet p4
+ security protocol telnet
+ no exec authorization
+ no login authentication
+ vrf p4
+ exit
+!
+server telnet tel
+ security authentication users
+ security rsakey rsa
+ security dsakey dsa
+ security ecdsakey ecdsa
+ access-log
+ access-rate 5 5000
+ access-total 5
+ access-peer 5
+ second-port 22
+ exec logging
+ no exec authorization
+ login authentication users
+ login logging
+ login last global
+ interface sdn5
+ vrf inet
+ exit              
+!
+server p4lang p4
+ export-vrf inet
+ export-port sdn1 0 0 0 0 0
+ export-port sdn2 1 0 0 0 0
+ export-port sdn3 2 0 0 0 0
+ export-port sdn4 3 0 0 0 0
+ export-port sdn5 4 0 0 0 0
+ interconnect ethernet0
+ vrf p4
+ exit
+!
+server forwarder ssh2host
+ access-log
+ access-rate 5 5000
+ access-total 5
+ access-peer 5
+ port 22
+ logging
+ target vrf inet
+ target interface sdn5
+ target address 10.255.255.1
+ target port 22
+ interface sdn1
+ vrf inet
+ exit
+!
+server dns ns
+ recursion enable
+ interface sdn5
+ vrf inet
+ exit
+!
+client proxy inet
+client name-server 8.8.8.8
+client upgrade-server http://upgrade.nop.hu/
+client upgrade-backup
+client config-backup
+client time-server europe.pool.ntp.org
+client time-zone CET
+!
+end
